@@ -1,0 +1,161 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+
+@media screen and (min-width: 610px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .navbar>ul>li>a:hover {
+        color: #eee7e7;
+        width: 100%;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .brand {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .brand:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+
+@media screen and (min-width: 455px) {
+    .headline__content {
+        padding: 16px 16px;
+    }
+
+    .headline__title {
+        font-size: 28px;
+    }
+
+    .headline__description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .headline__content {
+        margin: 0 auto;
+        max-width: 650px;
+    }
+
+    .post-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .post-item__title {
+        font-size: 18px;
+    }
+
+    .post-item__description {
+        font-size: 14px;
+    }
+
+    .brand {
+        position: relative;
+        left: -30px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .brand {
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .brand {
+        position: relative;
+        left: -75px;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .brand {
+        position: relative;
+        left: -90px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .headline__content {
+        padding: 16px 32px;
+    }
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .brand {
+        position: relative;
+        left: -125px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .brand {
+        position: relative;
+        left: -150px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .brand {
+        position: relative;
+        left: -185px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+    .brand {
+        position: relative;
+        left: -270px;
+    }
+}
+

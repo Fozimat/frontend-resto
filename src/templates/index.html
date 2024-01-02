@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Yuk`s Makan. Nikmati Hidangan di Restoran Favorit Anda"
+    />
+    <title>Makan Yuk`s</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="skip">
+        <a href="#kontent" class="skip-link">Skip konten</a>
+      </div>
+      <span class="navbar-toggle" id="navbar-toggle">
+        <a class="drawer" href="#" aria-label="Menu Navigasi">☰</a>
+      </span>
+      <a href="#" class="brand">Makan Yuk`s</a>
+      <ul class="main-nav" id="menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">Favorite</a>
+        </li>
+        <li>
+          <a href="https://fozimat.my.id/" target="blank" class="nav-links"
+            >About Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero__inner" tabindex="0">
+        <h1 class="hero__title">
+          Nikmati Hidangan di Restoran Favorit Anda ^_^
+        </h1>
+        <p class="hero__tagline">
+          <i>Dapatkan Diskon yang menarik hingga voucher cashback</i>
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section class="content" id="kontent">
+        <div class="latest">
+          <h1 class="latest__label" tabindex="0">Top Restoran</h1>
+          <div class="posts" id="posts"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="kontak">
+      <h1 class="latest__label" tabindex="0">Hubungi Kami</h1>
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <label for="nama">Nama:</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama anda.."
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan email anda.."
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="pesan">Pesan:</label>
+            <textarea
+              id="pesan"
+              name="pesan"
+              placeholder="Masukkan pesan.."
+              required
+              aria-label="pesan"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="#">Copyright © 2023 - Makan Yuk`s</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
