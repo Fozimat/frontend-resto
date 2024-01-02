@@ -99,6 +99,7 @@ body {
   text-align: center;
   background-image: url("../public/images/heros/hero-image_3.jpg");
   background-position: center;
+  object-fit: cover;
 }
 
 .hero__inner {
