@@ -2,118 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="Description"
+      name="description"
       content="Yuk`s Makan. Nikmati Hidangan di Restoran Favorit Anda"
     />
-    <title>Makan Yuk`s</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <title>Makan Skuy</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="skip">
-        <a href="#kontent" class="skip-link">Skip konten</a>
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <a id="hamburgerButton" href="#">☰</a>
       </div>
-      <span class="navbar-toggle" id="navbar-toggle">
-        <a class="drawer" href="#" aria-label="Menu Navigasi">☰</a>
-      </span>
-      <a href="#" class="brand">Makan Yuk`s</a>
-      <ul class="main-nav" id="menu">
-        <li>
-          <a href="index.html" class="nav-links">Home</a>
-        </li>
-        <li>
-          <a href="#" class="nav-links">Favorite</a>
-        </li>
-        <li>
-          <a
-            href="https://fozimat.my.id/"
-            target="blank"
-            class="nav-links"
-            rel="noreferrer"
-            >About Us</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <div class="hero">
-      <div class="hero__inner" tabindex="0">
-        <h1 class="hero__title">
-          Nikmati Hidangan di Restoran Favorit Anda ^_^
-        </h1>
-        <p class="hero__tagline">
-          <i>Dapatkan Diskon yang menarik hingga voucher cashback</i>
-        </p>
+      <div class="app-bar__brand">
+        <a href="#"><h1>Makan Skuy</h1></a>
       </div>
-    </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <div class="skip">
+          <a href="#kontent" class="skip-link">Skip konten</a>
+        </div>
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/like">Favorite</a></li>
+          <li>
+            <a href="https://www.dicoding.com/users/fozimat" target="_blank"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <main>
-      <section class="content" id="kontent">
-        <div class="latest">
-          <h1 class="latest__label" tabindex="0">Top Restoran</h1>
-          <div class="posts" id="posts"></div>
-        </div>
-      </section>
-    </main>
-
-    <div class="kontak">
-      <h1 class="latest__label" tabindex="0">Hubungi Kami</h1>
-      <form action="">
-        <div class="row">
-          <div class="col">
-            <label for="nama">Nama:</label>
-            <input
-              type="text"
-              id="nama"
-              name="nama"
-              placeholder="Masukkan nama anda.."
-              required
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Masukkan email anda.."
-              required
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <label for="pesan">Pesan:</label>
-            <textarea
-              id="pesan"
-              name="pesan"
-              placeholder="Masukkan pesan.."
-              required
-              aria-label="pesan"
-            ></textarea>
-          </div>
-        </div>
-
-        <div class="row">
-          <button type="submit" class="btn">Kirim Pesan</button>
-        </div>
-      </form>
-    </div>
+    <main id="mainContent"></main>
 
     <footer>
-      <ul>
-        <li><a href="#">Copyright © 2023 - Makan Yuk`s</a></li>
-      </ul>
+      <p>
+        Copyright © 2020
+        <a href="https://www.dicoding.com" target="_blank" rel="noreferrer"
+          >Makan Skuy</a
+        >
+      </p>
     </footer>
   </body>
 </html>
