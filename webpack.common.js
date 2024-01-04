@@ -7,7 +7,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "src/scripts/index.js"),
-    sw: path.resolve(__dirname, "src/scripts/sw.js"),
   },
   output: {
     filename: "[name].bundle.js",
@@ -48,6 +47,16 @@ module.exports = {
 
     new WorkboxWebpackPlugin.GenerateSW({
       swDest: "./sw.bundle.js",
+      runtimeCaching: [
+        {
+          urlPattern: ({ url }) =>
+            url.href.startsWith("https://restaurant-api.dicoding.dev/"),
+          handler: "StaleWhileRevalidate",
+          options: {
+            cacheName: "restaurantdb-api",
+          },
+        },
+      ],
     }),
   ],
 };
