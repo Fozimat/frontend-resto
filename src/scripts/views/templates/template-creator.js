@@ -3,7 +3,7 @@ import CONFIG from "../../globals/config";
 const createRestaurantDetailTemplate = (restaurant) => `
 <div class="detail" tabindex="0">
 <h2 class="restaurant__title" tabindex="0">${restaurant.name}</h2>
-<img class="restaurant__poster" src="${
+<img class="restaurant__poster" crossorigin="anonymous" src="${
   CONFIG.BASE_IMAGE_URL + restaurant.pictureId
 }" alt="${restaurant.name}" />
 
