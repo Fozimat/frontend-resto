@@ -18,6 +18,7 @@
     "indent": "off",
     "no-restricted-globals": "off",
     "operator-linebreak": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "implicit-arrow-linebreak": "off"
   }
 }
