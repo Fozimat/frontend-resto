@@ -17,6 +17,7 @@
     "comma-dangle": "off",
     "indent": "off",
     "no-restricted-globals": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
