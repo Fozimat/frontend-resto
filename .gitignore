@@ -1,2 +1,7 @@
 node_modules
 dist/
+.idea
+.vscode
+.env
+.test.env
+package-lock.json
