@@ -21,6 +21,8 @@
     "import/no-extraneous-dependencies": "off",
     "implicit-arrow-linebreak": "off",
     "no-undef": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "consistent-return": "off",
+    "no-prototype-builtins": "off"
   }
 }
