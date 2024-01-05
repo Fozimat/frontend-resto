@@ -1,7 +1,7 @@
 import UrlParser from "../../routes/url-parser";
 import RestaurantSource from "../../data/restaurant-source";
 import { createRestaurantDetailTemplate } from "../templates/template-creator";
-import LikeButtonInitiator from "../../utils/like-button-initiator";
+import LikeButtonPresenter from "../../utils/like-button-presenter";
 
 const Detail = {
   async render() {
@@ -19,7 +19,7 @@ const Detail = {
       restaurant.restaurant
     );
 
-    await LikeButtonInitiator.init({
+    await LikeButtonPresenter.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       restaurant: {
         id: restaurant.restaurant.id,
