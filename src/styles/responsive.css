@@ -3,6 +3,12 @@
   grid-row-gap: 16px;
 }
 
+@media screen and (max-width: 650px) {
+  .hero {
+    background-image: url("../public/images/heros/hero-image_3-small.jpg");
+  }
+}
+
 @media screen and (min-width: 650px) {
   .app-bar {
     grid-template-columns: 1fr auto;
