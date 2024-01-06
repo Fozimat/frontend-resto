@@ -25,6 +25,7 @@
     "consistent-return": "off",
     "no-prototype-builtins": "off",
     "import/prefer-default-export": "off",
-    "no-return-assign": "off"
+    "no-return-assign": "off",
+    "prefer-destructuring": "off"
   }
 }
